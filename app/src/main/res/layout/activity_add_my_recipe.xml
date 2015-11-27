@@ -9,43 +9,29 @@
     tools:context="com.example.user.recipemaker.AddMyRecipeActivity"
     android:weightSum="1">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="148dp">
+        android:layout_height="match_parent">
 
         <ImageButton
-            android:layout_width="match_parent"
+            android:layout_width="517dp"
+            android:layout_height="389dp"
+            android:id="@+id/meat"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/meat" />
+
+        <ImageButton
+            android:layout_width="529dp"
+            android:layout_height="371dp"
+            android:id="@+id/fish"
+            android:layout_gravity="center"
+            android:src="@drawable/fish" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/vegetable"
+            android:layout_gravity="center_horizontal|bottom"
             android:src="@drawable/vegetable" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_weight="0.36">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/meat"
-            android:src="@drawable/meat" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:layout_weight="0.30">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fish"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/fish" />
-    </LinearLayout>
-
+    </FrameLayout>
 </LinearLayout>

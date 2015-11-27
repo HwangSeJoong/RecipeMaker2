@@ -17,12 +17,13 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        startActivity(new Intent(this, LoadingActivity.class));
 
         Button btn = (Button)findViewById(R.id.button);
         Button btn2= (Button)findViewById(R.id.button2);
         Button btn3 = (Button)findViewById(R.id.button3);
 
-        final Intent intent = new Intent(this, AddMyRecipeActivity.class);
+     //   final Intent intent = new Intent(this, AddMyRecipeActivity.class);
 
       View.OnClickListener listener = new View.OnClickListener() {
           @Override
@@ -32,7 +33,8 @@ public class MainActivity extends Activity {
                   case R.id.button:
                       //버튼1 눌렀을때
                       Toast.makeText(MainActivity.this, "버튼 1 눌렀습니다", Toast.LENGTH_SHORT).show();
-                      startActivity(intent);
+                   //   startActivity(new Intent(MainActivity.this,AddMyRecipeActivity.class));
+                      startActivity(new Intent(MainActivity.this,getRecipeName.class));
                       break;
 
                   case R.id.button2:

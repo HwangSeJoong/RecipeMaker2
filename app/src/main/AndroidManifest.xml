@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.recipemaker" >
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +21,15 @@
         <activity
             android:name=".AddMyRecipeActivity"
             android:label="@string/title_activity_add_my_recipe" >
+        </activity>
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/title_activity_loading"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".getRecipeName"
+            android:label="@string/title_activity_get_recipe_name" >
         </activity>
     </application>
 
